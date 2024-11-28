@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev´s barbearia</title>
+    <link href="./src/output.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body class="bg-black">
+    <div class="w-full bg-gray-950 fixed backdrop-opacity-5 flex justify-between items-center sm: pr-10 ">
+        <ul class="flex gap-7  p-2 ">
+            <li class="font-poppins text-white cursor-pointer transition-all hover:text-gray-500    sm:text-2xl"><a href="#home">home</a></li>
+            <li class="font-poppins text-white cursor-pointer  transition-all hover:text-gray-500 sm:text-2xl"><a href="#Serviços">Serviços</a></li>
+            <li class="font-poppins text-white cursor-pointer  transition-all hover:text-gray-500   sm:text-2xl "><a href="#contato">contato</a></li>
+            <li class="font-poppins  text-white cursor-pointer transition-all hover:text-gray-500 sm:text-2xl "><a href="#agendar">agendar</a></li>
+        </ul>
+        <button class="mr-5 bg-white p-3 rounded-md transition-all font-poppins m-3  hover:bg-gray-500 sm:"> <i class="fa-solid fa-user"></i> Conta</button>
+    </div>
+    <div class="h-screen flex bg-black justify-around " id="home">
+        
+     
+        <div class="flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold text-white font-poppins sm:text-3xl">Bem vindo a</h1>
+            <h2 class="text-4xl font-bold text-white font-poppins sm:text-3xl" >Dev´s barbershop</h1>
+            <h2 class="text-4xl font-bold text-white  font-poppins sm:text-3xl text-center">a Prioridade aqui é sua satisfação</h2>
+       
+            <button class="bg-white p-2 font-poppins  rounded-2xl  hover:bg-gray-500 transition-colors m-10 "> <i class="fa-solid fa-clock"></i> Agendar um horario</button>
+        </div>
+    </div>
+    <h4 class="bg-black text-center text-white font-montserrat font-bold text-4xl" id="Serviços">Serviços oferecidos</h4>
+    <div class="flex gap-4 justify-between p-5 bg-gray-950 mb-10 sm:flex flex-col items-center w-full">
+        
+        <div class="p-5 bg-black rounded-2xl shadow-md transition-all  hover:scale-105 ">
+            <img src="images/cabelo.jpg" alt="" class=" w-56  h-56 object-cover rounded-xl">
+            <p class="text-center text-white font-poppins mt-3 capitalize ">cabelo</p>
+        </div>
+        
+        <div  class="p-5 bg-black rounded-2xl shadow-md transition-all  hover:scale-105 ">
+            <img src="images/bigode.jpeg" alt="" class=" w-56 h-56 object-cover">
+            <p class="text-center text-white font-poppins mt-3 capitalize ">bigode</p>
+        </div>
+        
+        <div  class="p-5 bg-black rounded-2xl shadow-md transition-all hover:scale-105 ">
+            <img src="images/barba.jpeg" alt="" class=" w-56  h-56 object-cover">
+            <p class="text-center text-white font-poppins mt-3 capitalize ">barba</p>
+        </div>
+        
+        <div  class="p-5 bg-black rounded-2xl shadow-md transition-all hover:scale-105 ">
+            <img src="images/sobrancelha.jpeg" alt="" class=" w-56 h-56 object-cover"> 
+            <p class="text-center text-white font-poppins mt-3 capitalize ">sobrancelha</p>
+        </div>
+    </div>
+
+    <div class="w-full h-72 flex items-center justify-center bg-black" id="agendar">
+        <form action="" class="flex flex-col items-center h-60 gap-3  bg-gray-950 shadow-md shadow-gray-700  w-72 justify-center rounded-xl bg-black" method="post"> 
+            <h5 class="font-inter text-white">Agende um horario</h5>
+            <input type="text" placeholder="Digite seu nome" required class="font-inter rounded-md p-1 focus:outline-purple-600">
+            <input type="text" placeholder="digite seu numero"  required  class="font-inter rounded-md p-1  focus: outline-purple-600">
+            <select name="opções" id="" class="font-inter rounded-md p-1 w-52 ouline-none" required> 
+                <option value="barba">barba</option>
+                <option value="cabelo">cabelo</option>
+                <option value="bigode">bigode</option>
+                <option value="sobrancelha">sobrancelha</option>
+             
+            </select>
+            <button type="submit" class=" bg-white p-2 rounded-md transition-all font-poppins  hover:bg-gray-500 outline-purple-600">Agendar</button>
+        </form>
+    </div>
+    <footer class="w-full h-96 mt-40 flex flex-col items-center justify-center" id="contato">
+        
+        <img src="images/imagem1Header.jpeg" alt="" class="w-44 h-44 rounded-full">
+        <p class="text-4xl text-white font-poppins font-light">Dev´s barbearia</p>
+        <p class="text-4x1 text-white font-poppins font-light">Contatos:</p>
+        <ul class="flex gap-10 mt-10 items-center justify-around">
+            <li class="text-white text-3xl cursor-pointe" ><i class="fa-brands fa-facebook"></i></li>
+            <li class="text-white text-3xl cursor-pointer"><i class="fa-brands fa-instagram"></i></li>
+            <li class="text-white text-3xl cursor-pointer"><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
