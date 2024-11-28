@@ -9,6 +9,15 @@ module.exports = {
         poppins:["Poppins","sans-serif"],
         inter:["Inter","sans-serif"]
       },
+      animation:{
+        'fade-in': 'fadeIn 2s ease-out normal'
+      },
+      keyframes:{
+        fadeIn:{
+          '0%': {opacity:'0'},
+          '100%': {opacity:'1'}
+        },
+      },
     },
   },
   plugins: [],
