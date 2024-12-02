@@ -1,4 +1,5 @@
 <?php 
+
 session_start();
 
 include '../conexao.php';
@@ -16,8 +17,8 @@ if($senha === $senha_confirm){
     $sql = "SELECT * FROM devbarbershop.usuarios WHERE email='$email' AND senha='$senha'";
     $sql_query = $mysqli->query($sql);
     $result = $sql_query->num_rows;
-    if($result>0){
-        $_SESSION['email'] = $_POST['email'];        
+    if($result>0){      
+        $_SESSION['email'] = $_POST['email'];
         header("Location: ../painel_usuario.php");
         exit;
         
