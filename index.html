@@ -68,17 +68,17 @@
     </div>
 
     <div class="w-full h-72 flex items-center justify-center bg-black" id="agendar">
-        <form action="" class=" flex flex-col  sm:flex flex-col items-center h-60 gap-3  bg-gray-950 shadow-gray-700  w-72 justify-center rounded-xl bg-black" method="post"> 
-            <h5 class="font-inter text-white">Agende um horao</h5>
-            <input type="text" placeholder="Digite seu nome" required class="font-inter rounded-md p-1 focus:outline-purple-600 sw-10">
-            <input type="text" placeholder="digite seu numero"  required  class="font-inter rounded-md p-1  focus: outline-purple-600">
-            <select name="opções" id="" class="font-inter rounded-md p-1 w-52 ouline-none" required> 
+        <form action="./scripts/CadastraServico.php" class=" flex flex-col  sm:flex flex-col items-center h-60 gap-3  bg-gray-950 shadow-gray-700  w-72 justify-center rounded-xl bg-black" method="post"> 
+            <h5 class="font-inter text-white">Agende um horario</h5>
+            <input type="text" placeholder="Digite seu nome" name="nome" required class="font-inter rounded-md p-1 focus:outline-purple-600 sw-10">
+            <select name="servicos" id="" class="font-inter rounded-md p-1 w-52 ouline-none" required> 
                 <option value="barba">barba</option>
                 <option value="cabelo">cabelo</option>
                 <option value="bigode">bigode</option>
                 <option value="sobrancelha">sobrancelha</option>
              
             </select>
+            <input type="datetime-local" name="horario" id="">
             <button type="submit" class=" bg-white p-2 rounded-md transition-all font-poppins  hover:bg-gray-500 outline-purple-600">Agendar</button>
         </form>
     </div>
